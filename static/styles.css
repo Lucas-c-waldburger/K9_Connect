@@ -1,0 +1,31 @@
+div {
+    padding: 20px
+}
+
+img {
+    display: inline-block;
+}
+
+input {
+    margin: 5px 0
+
+}
+
+label {
+    width: 20px
+}
+
+table {
+    display: inline;
+    position: relative;
+
+}
+
+.miles-away {
+    font-style: italic;
+}
+
+.address-p {
+    display: inline;
+}
+

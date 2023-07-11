@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>K9•Connect</title>
+  <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+
+  {% for park in park_details: %}
+    <div class="park-search-result">
+      <table>
+        <tr>
+          <td>
+            <img src="{{ park.photo_url_list[0] }}"><br>
+          </td>
+          <td>
+            <h2>{{ park.name }}</h2><br>
+            <a href="{{ park.maps_url }}">{{ park.formatted_address }}</a><br>
+            <p class="miles-away">({{ park.travel_details.distance }} miles away)</p><br>
+            <h2>{{ park.ratings.stars_line }}</h2>
+      </table>
+      <hr>
+    </div>
+  {% endfor %}
+
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Enter Info</title>
+  <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+  <div class="K9Connect-logo">
+    <img class="logo" src="static/k9-connect-logo.png">
+  </div>
+  <div class="address-div">
+    <form class="address-form" method="post">
+      <label class="address-label">Address: </label>
+      <input type="text" name="address-line-1" value="{{ request.form['address-line-1'] }}"><br>
+      <label class="address-label">Apartment, Suite, etc.: </label>
+      <input type="text" name="address-line-2" value="{{ request.form['address-line-2'] }}"><br>
+      <label class="address-label">City: </label>
+      <input type="text" name="city" value="{{ request.form['city'] }}"><br>
+      <label class="address-label">State: </label>
+      <input type="text" name="state" value="{{ request.form['state'] }}">
+      <label class="address-label">Zip code: </label>
+      <input type="text" name="zip" value="{{ request.form['zip'] }}"><br>
+      <input class="submit-button" type="submit" value="Search!"><br>
+    </form>
+  </div>
+
+</body>
+</html>
